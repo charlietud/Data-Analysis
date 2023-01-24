@@ -77,3 +77,16 @@ SELECT *
   FROM table_name
   WHERE age 
   BETWEEN 20 AND 30;
+
+-- Example: -- Select all records for German-language films released after 2000 and before 2010
+SELECT *
+  FROM films
+  WHERE language = 'German' AND release_year 
+  BETWEEN 2000 AND 2010;
+
+-- A more complex example 
+SELECT title, release_year
+FROM films
+WHERE (release_year = 1990 OR release_year = 1999)
+AND (language = 'English' OR language = 'Spanish')
+AND gross > 2000000;
