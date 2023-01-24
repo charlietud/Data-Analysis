@@ -58,3 +58,22 @@ SELECT *
 -- 7. ORDER BY
 -- 8. LIMIT
 
+-- Multiple criteria/conditions
+
+-- OR operator
+SELECT *
+  FROM table_name
+  WHERE name = 'John' 
+  OR name = 'Mary';
+
+-- AND operator
+SELECT *
+  FROM table_name
+  WHERE name = 'John' 
+  AND age = 30;
+
+-- BETWEEN, AND operator
+SELECT *
+  FROM table_name
+  WHERE age 
+  BETWEEN 20 AND 30;
