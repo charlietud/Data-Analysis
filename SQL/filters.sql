@@ -25,4 +25,11 @@ SELECT title, certification, language
 
 -- So far our SQL vocabulary includes COUNT(), DISTINCT, LIMIT, WHERE, OR, AND, BETWEEN, LIKE, NOT LIKE, and IN.
 
+-- NULL values are a special value that indicates that a value is missing or unknown.
+SELECT title AS no_budget_title
+  FROM films
+  WHERE budget IS NULL;
 
+SELECT title AS no_language
+FROM films
+WHERE language IS NOT NULL;
