@@ -33,3 +33,10 @@ SELECT title AS no_budget_title
 SELECT title AS no_language
 FROM films
 WHERE language IS NOT NULL;
+
+-- HAVING It works similarly to WHERE in that it is a filtering clause, with the difference that HAVING filters grouped data.
+-- Find the number of films released in each year
+SELECT release_year, COUNT(duration) AS num_films
+  FROM films
+  GROUP BY release_year
+  HAVING COUNT(duration) > 120;
