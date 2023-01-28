@@ -8,3 +8,6 @@ I will be using multiple useful tools often used in the field as well as librari
 - NumPy
 
 - SQL
+
+Design:
+https://www.figma.com/file/UnLIR9jzKhkPIs2HjEQuGU/CheatSheet?node-id=0%3A1&t=A9I9nSz5ZTlCgo1r-0 
